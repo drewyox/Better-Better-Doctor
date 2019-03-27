@@ -4,10 +4,11 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
 import './sass/styles.scss';
+import {Doc} from 'backend.js';
 
 $("document").ready(function(){
   $("#issueSearch").submit(function(){
-    let symptom = $("#symptoms").val();
+    let keyword = $("#symptoms").val();
 
   })
 
