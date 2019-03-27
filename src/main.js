@@ -15,9 +15,9 @@ $("document").ready(function(){
     let promise = docbyAil.findAil(keyword);
 
     promise.then(function(response){
-      let body = JSON.parse(response);
-      body.data.forEach(function(element) {
-        let results = (`${element.profile.first_name} ${element.profile.last_name}`);
+      let docResponse = JSON.parse(response);
+      docResponse.data.forEach(function(element) {
+        let results = (`${element.profile.first_name} + " " + ${element.profile.last_name}`);
         console.log(results);
       })
     })
