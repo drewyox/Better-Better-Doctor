@@ -18,12 +18,22 @@ export class Doc {
   }
 }
 
-// export class FoundDoc {
-//   constructor (name, address, phone,accepting, haveSite) {
-//         this.name = name;
-//         this.address = address;
-//         this.phone = phone
-//         this.accepting = accepting;
-//         this.haveSite = haveSite
-//         }
-//     }
+export class FoundDoc {
+  constructor (name, address, phone,accepting, haveSite) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone
+        this.accepting = accepting;
+        this.haveSite = haveSite
+        }
+        toHTML(){
+         return '<div class=newDoctor>'+
+                    '<p> Doctors name: ' + this.name + '</p>'+
+                    '<p class=\'info\'> Address: ' + this.address + '</p>'+
+                    '<p class=\'info\'> Phone Number: ' + this.phone + '</p>'+
+                    '<p class=\'info\'> New Patients: ' + this.accepting + '</p>'+
+                    '<p class=\'info\'> Website: ' + this.haveSite + '</p>'+
+                '</div>';
+ }
+
+    }

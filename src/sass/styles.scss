@@ -1,1 +1,20 @@
 
+
+
+
+
+.showInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.newDoctor {
+  background-color: silver;
+  margin-bottom: 50px;
+  p {
+    margin-top:3px;
+    margin-bottom:3px;
+  }
+  .info{
+  margin-left: 5%;}
+}
