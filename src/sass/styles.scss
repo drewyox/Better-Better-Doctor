@@ -1,6 +1,23 @@
 
+#issueSearch {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: auto;
+  margin-top: 7.5vw;
+  margin-bottom: 5vw;
+}
 
 
+label {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+}
 
 
 .showInfo {
@@ -13,6 +30,7 @@
   margin-bottom: 50px;
   margin-left: 10vw;
   width: 85vw;
+  padding: 7px;
   p {
     margin-top:3px;
     margin-bottom:3px;
