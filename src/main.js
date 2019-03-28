@@ -32,11 +32,7 @@ $("document").ready(function(){
             const haveSite = (website) ? website : "No website available";
             const yourDoctor = new FoundDoc(name, address, phone, accepting, haveSite);
 
-            $(".showInfo").append(yourDoctor.toHTML());
-            // $(".showInfo").append(yourDoctor.address + " ");
-            // $(".showInfo").append(yourDoctor.phone + " ");
-            // $(".showInfo").append(yourDoctor.accepting + " ");
-            // $(".showInfo").append(yourDoctor.haveSite + "/////");
+            $(".showInfo").append(yourDoctor.HTML());
 
 
 

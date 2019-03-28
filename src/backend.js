@@ -4,7 +4,7 @@ export class Doc {
    return new Promise(function(resolve, reject){
      const request = new XMLHttpRequest();
      const apiKey = process.env.exports.apiKey; //api key variable
-     const url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${keyword}&location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=${apiKey}`
+     const url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${keyword}&location=45.5155%2C-122.6793%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=${apiKey}`
      request.onload = function() {
           if (this.status === 200) {
             resolve(request.response)
@@ -26,7 +26,7 @@ export class FoundDoc {
         this.accepting = accepting;
         this.haveSite = haveSite
         }
-        toHTML(){
+        HTML(){
          return '<div class=newDoctor>'+
                     '<p> Doctors name: ' + this.name + '</p>'+
                     '<p class=\'info\'> Address: ' + this.address + '</p>'+
