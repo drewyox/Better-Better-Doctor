@@ -17,3 +17,13 @@ export class Doc {
     });
   }
 }
+
+// export class FoundDoc {
+//   constructor (name, address, phone,accepting, haveSite) {
+//         this.name = name;
+//         this.address = address;
+//         this.phone = phone
+//         this.accepting = accepting;
+//         this.haveSite = haveSite
+//         }
+//     }
